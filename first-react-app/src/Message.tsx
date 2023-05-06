@@ -3,7 +3,12 @@
 // PascalCasing
 function Message() {
     // JSX: JavaScript XML
-    return <h1>Hello World!</h1>
+    const name = "";
+    if (name) {
+        return <h1>Helo {name}</h1>
+    } else {
+        return <h1>Hello World!</h1>
+    }
 }
 
 
