@@ -16,4 +16,9 @@ Notes:
 - `export default` can be used on a single value per module to create a default export
   other exports must be named exports and need to be put in '{ }' when exporting/importing
   while the default export doesnt 
+
+- React only allows a component to return a single html element
+ if want to return multiple elements, can import Fragment from 'react' and wrap your 
+ elements in that or just put empty angle brackets - '<>' and react will interperet that
+ as a fragment
 -->
