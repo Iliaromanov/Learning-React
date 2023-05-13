@@ -17,9 +17,13 @@ function ListGroup() {
             <ul className="list-group">
                 {langs.map(
                     (lang) => (
-                        <li key={lang} className="list-group-item"> {/* Need to add key prop for react to be able to dynamically add and remove elems later*/}
+                <li 
+                    key={lang} 
+                    className="list-group-item"
+                    onClick={() => console.log(`${lang} was clicked!`)}
+                > {/* Need to add key prop for react to be able to dynamically add and remove elems later*/}
                             {lang}
-                        </li>
+                </li>
                     )
                 )}
             </ul>
