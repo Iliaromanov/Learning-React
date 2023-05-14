@@ -5,10 +5,11 @@ import { useState } from "react";
 interface Props {
     list: string[]
     header: string
+    onSelectItem: (item: string) => void;
 }
 
 
-function ListGroup({list, header}: Props) {
+function ListGroup({list, header, onSelectItem}: Props) {
 
     // const msg = list.length === 0 ? <p>No Items Found</p> : null;
     const msg = list.length === 0 && <p>No Items Found</p>; // same as above
@@ -42,7 +43,12 @@ function ListGroup({list, header}: Props) {
                     // onClick={(event) => handleClick(event, item)}
 
                     //----- using state hook
-                    onClick={() => setSelectedItemIndex(index)}
+                    onClick={
+                        () => {
+                            setSelectedItemIndex(index);
+                            onSelectItem(item);
+                        }
+                    }
                 > {/* Need to add key prop for react to be able to dynamically add and remove elems later*/}
                     {item}
                 </li>
