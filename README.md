@@ -21,4 +21,9 @@ Notes:
  if want to return multiple elements, can import Fragment from 'react' and wrap your 
  elements in that or just put empty angle brackets - '<>' and react will interperet that
  as a fragment
+
+ - In react, 'useState' is a hook functions that returns a length 2 arr
+   arr[0] = a variable, arr[1] = functions to change the variable
+   once the function to change the variable is called, it will change the variable
+   and notify react to update the DOM wherever the variable was used.
 -->
