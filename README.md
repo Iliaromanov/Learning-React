@@ -26,4 +26,10 @@ Notes:
    arr[0] = a variable, arr[1] = functions to change the variable
    once the function to change the variable is called, it will change the variable
    and notify react to update the DOM wherever the variable was used.
+  |
+  ==> EACH COMPONENT HAS ITS OWN STATE! 
+     (eg if I create two ListGroup components, the selectedItemIndex will be separate for each)
+
+- props are a way of passing data to components (like args to a function)
+- in JS, instead of defining an interface like here, we import PropTypes and define types that way
 -->
